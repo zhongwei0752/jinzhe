@@ -1,0 +1,578 @@
+<?php /*%%SmartyHeaderCode:75085300779e5f8677-17946466%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '9132563cbdc5bc186f61967dfe81e726fa83bb11' => 
+    array (
+      0 => '.\\templates\\new.html',
+      1 => 1392911915,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '75085300779e5f8677-17946466',
+  'cache_lifetime' => 120,
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_5306262d612ce9_10978555',
+  'variables' => 
+  array (
+    'list1' => 0,
+    'list' => 0,
+    'list2' => 0,
+    'cookie' => 1,
+    'username' => 1,
+  ),
+  'has_nocache_code' => true,
+),true); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5306262d612ce9_10978555')) {function content_5306262d612ce9_10978555($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>广州鑫泽投资管理有限公司</title>
+<link rel="shortcut icon" href="/styles/index/images/favicon.ico" />
+<link href="./templates/css/basic.css" rel="stylesheet" type="text/css" />
+<link href="./templates/css/default.css" rel="stylesheet" type="text/css" />
+<link href="./templates/css/collpage.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="./templates/css/style.css">
+<link rel="stylesheet" href="./templates/sliders/elastslider/elastic.css" media="screen" />
+<script type="text/javascript" src="./templates/js/swfobject.js"></script>
+<script type="text/javascript" src="./templates/js/mar.js"></script>
+    <script src="./templates/js/modernizr.custom.js"></script>
+    <script src="./templates/js/video.js"></script>
+    <script>_V_.options.flash.swf = './templates/js/video-js.swf';</script>
+    <style type="text/css">
+.cls_container{width:440px;font-size:12px;height:244px;overflow:hidden;}
+.cls_container ul{list-style-type:none;margin-top:10px;padding:0;margin-left:10px;}
+.cls_container ul li{height:24px;line-height:24px;width:430px;float:left;display:inline;}
+.cls_container ul li span{float:right;}
+</style>
+<!--[if IE 7]> 
+<style type="text/css">
+    .mod{
+    margin-bottom:25px;
+    }
+    #yeneixinwen{
+    padding-top:10px;
+    }
+    </style>
+<![endif]--> 
+</head>
+
+<body>
+<div class="phd">
+	<div class="phdtop">
+        <p style="float: right;padding: 0px 15px 0 0px;font-size:12px;"><img src="./templates/weixin.jpg" style="width:18px;float:left;"/><span>&nbsp;微信公众号</span>|<img src="./templates/xinlang.jpg" style="width:12px;"/></span>&nbsp;新浪微博</span>|<img src="./templates/shoucang.jpg" style="width:14px;"/><span style="padding-top:-10px;">&nbsp;加入收藏</span></p>
+        <p style="float: right;clear: right;padding: 10px 15px 0 80px;color:red;font-size:16px;">财富热线：020-89209004/13544381605</p>
+        <a href="/" class="logo"><img src="./templates/img/logo.png"/></a>
+    </div>
+    <ul class="nav">
+        <li style="background-image:none;"><a href="index.php">&nbsp;&nbsp;首&nbsp;页&nbsp;</a></li>
+        <li><a href="./templates/instroduce.html">企业简介</a></li>
+         <li><a href="list.php?op=product">热销产品</a></li>
+        <li><a href="list.php?op=message">信息公告</a></li>
+        <li><a href="list.php?op=news">新闻资讯</a></li>
+        <li><a href="./templates/custom.html">客服中心</a></li>
+        <li><a href="list.php?op=people">人力资源</a></li>
+    </ul>
+</div>
+
+<div class="pbd">
+  <div class="part pt-main">
+		<div class="ps-cont">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab
+ #version=6,0,29,0" width="100%" height="182"> 
+<param name="movie" value="./templates/swf/0.swf">
+ <param name="quality" value="high"> 
+<param name="allowFullScreen" value="true" /> 
+<param name="IsAutoPlay" value="1" /> 
+<embed src="./templates/swf/0.swf" width="100%" height="182" allowFullScreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+</object>
+            
+
+
+        
+
+
+       
+	</div>
+    <div class="group gp1">
+	
+		<div class="mod mod-searchBar" >
+		  
+			  <div class="mod mod01 mod-notic">
+                <div class="mhd"><b></b>
+                  <h2>业务介绍</h2>
+                </div>
+			  <div class="mod mod-ksfw">
+                <ul>
+                  <li class="ksfw01"><a href="list.php?op=product">理财产品</a></li>
+                  <li class="ksfw02"><a href="list.php?op=invest">项目投资</a></li>
+                  <li class="ksfw03"><a href="list.php?op=pay">第三方支付</a></li>
+                  <li class="ksfw04"><a href="list.php?op=good">公益信托</a></li>
+<!--                   <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
+                  <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
+                </ul>
+              </div>
+			 <!--  <div class="tab-cont">
+				<div class="cont hover">
+					<form  method="get" name="xxss"  class="formSea01">
+					  <p>
+						用户名:<input type="text" maxlength="26" size="20px; name="k""/>
+					  </p>
+                      <p>
+                       密&nbsp;&nbsp;码:<input type="text" maxlength="26" size="20px; name="k""/>
+                      </p>
+					  <p style="float:left;">
+						
+						&nbsp; <span class="btn01bg" style="margin-top:-40px;">
+						  <input type="button" value="登录" class="btn01" />
+						</span>
+						</p>
+                        <p>
+                        
+                        &nbsp; <span class="btn01bg" style="margin-top:-40px;">
+                          <input type="button" value="注册" class="btn01" />
+                        </span>
+                        </p>
+					</form>
+					
+				</div>
+					
+			  </div> -->
+			  
+				
+			</div>
+			
+		  </div>
+		  
+		  
+      <!-- <div class="mod mod-ksfw">
+        <ul>
+          <a href="mailto:zhizj@csg.cn;"><li class="ksfw01">资金信托</li></a>
+          <a href="/kfzx/kfly/"><li class="ksfw02">票据信托</li></a>
+          <a href="/download/"><li class="ksfw03">财产信托</li></a>
+          <a href="/rlzy/zpxx/"><li class="ksfw04">公益信托</li></a>
+          <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
+          <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a>
+        </ul>
+      </div> -->
+     <div class="mod mod01 mod-notic">
+        <div class="mhd"><b></b><a href="list.php?op=message" class="more01">更多 &gt;</a>
+          <h2>信息公告</h2>
+        </div>
+        <div class="mbd" style="height:225px;">
+          <ul class="disc01" style="WIDTH: 388px; HEIGHT:225px;margin-top:2px;">
+          
+
+                           <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00010&op=message">
+                    shenma</a>
+                </li>
+　　                          <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00009&op=message">
+                    ceshi</a>
+                </li>
+　　                          <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00008&op=message">
+                    测试</a>
+                </li>
+　　                          <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00007&op=message">
+                    温热污染</a>
+                </li>
+　　                          <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00006&op=message">
+                    34543</a>
+                </li>
+　　                          <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00005&op=message">
+                    5675</a>
+                </li>
+　　                    </ul>
+        </div>
+      </div>
+    </div>
+    <div class="group gp2">
+      <div class="mod mod-cpxx mod02" >
+        <div class="mhd"> <a href="list.php?op=product" class="more01">更多 &gt;</a>
+          <h2>产品信息</h2>
+        </div>
+        <div id="myscroll" class="cls_container">
+        <ul>
+                            <li>
+                    
+                    <a href="more.php?id=00016&op=product">
+                    阿斯顿过得更好</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00015&op=product">
+                    啊圣诞狗狗你让他</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00014&op=product">
+                    阿斯顿发送给换地方</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00013&op=product">
+                    自行车v大飞vsdcsd1</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00012&op=product">
+                    娃儿东方闪电擦伤</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00011&op=product">
+                    热帖分公司第三代</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00010&op=product">
+                    23423</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00009&op=product">
+                    34534</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00008&op=product">
+                    测试</a>
+                    <span>2014-02-19</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00007&op=product">
+                    温热污染</a>
+                    <span>2014-02-19</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00006&op=product">
+                    34543</a>
+                    <span>2014-02-19</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00005&op=product">
+                    5675</a>
+                    <span>2014-02-19</span>
+                </li>
+　　                      </ul>
+            </div>
+            <div id="showhint"></div>
+                    <script type="text/javascript">
+                    function $(element){
+                    if(arguments.length>1){
+                    for(var i=0,length=arguments.length,elements=[];i<length;i++){
+                    elements.push($(arguments[i]));
+                    }
+                    return elements;
+                    }
+                    if(typeof element=="string"){
+                    return document.getElementById(element);
+                    }else{
+                    return element;
+                    }
+                    }
+                    var Class={
+                    create:function(){
+                    return function(){
+                    this.initialize.apply(this,arguments);
+                    }
+                    }
+                    }
+                    Function.prototype.bind=function(object){
+                    var method=this;
+                    return function(){
+                    method.apply(object,arguments);
+                    }
+                    }
+                    var Scroll=Class.create();
+                    Scroll.prototype={
+                    initialize:function(element,height){
+                    this.element=$(element);
+                    this.element.innerHTML+=this.element.innerHTML;
+                    this.height=height;
+                    this.maxHeight=this.element.scrollHeight/2;
+                    this.counter=0;
+                    this.scroll();
+                    this.timer="";
+                    this.element.onmouseover=this.stop.bind(this);
+                    this.element.onmouseout=function(){this.timer=setTimeout(this.scroll.bind(this),100);}.bind(this);
+                    },
+                    scroll:function(){
+                    if(this.element.scrollTop<this.maxHeight){
+                    this.element.scrollTop++;
+                    this.counter++;
+                    }else{
+                    this.element.scrollTop=0;
+                    this.counter=0;
+                    }
+                    if(this.counter<this.height){
+                    this.timer=setTimeout(this.scroll.bind(this),100);
+                    }else{
+                    this.counter=0;
+                    this.timer=setTimeout(this.scroll.bind(this),100);
+                    }
+                    },
+                    stop:function(){
+                    clearTimeout(this.timer);
+                    }
+                    }
+                    var myscroll=new Scroll("myscroll",2);
+                    </script>
+
+      </div> 
+      <div class="mod mod-cpxx mod02" id="yeneixinwen" style="margin-top:20px;">
+        <div class="mhd"> <a href="list.php?op=news" class="more01">更多 &gt;</a>
+          <h2>业内新闻</h2>
+        </div>
+        <div class="mbd">
+          <ul class="disc01" style="margin-top:5px;">         
+           
+                            <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00010&op=news">
+                    shenma</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                           <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00009&op=news">
+                    ceshi</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                           <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00008&op=news">
+                    测试</a>
+                    <span>2014-02-19</span>
+                </li>
+　　                           <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00007&op=news">
+                    温热污染</a>
+                    <span>2014-02-19</span>
+                </li>
+　　                           <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00006&op=news">
+                    34543</a>
+                    <span>2014-02-19</span>
+                </li>
+　　                           <li style="line-height:6px;">
+                    
+                    <a href="more.php?id=00005&op=news">
+                    5675</a>
+                    <span>2014-02-19</span>
+                </li>
+　　                    </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="part pt-side" style="height:762px;">
+    <div class="group gp3">
+	
+      <div class="mod mod-xcgg" id="picShow02">
+			<div class="ps-cont">	
+
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab
+ #version=6,0,29,0" width="256" height="182"> 
+<param name="movie" value="http://static.youku.com/v1.0.0387/v/swf/loader.swf?VideoIDS=XNjA3MTQ1MzY4&embedid=MTgzLjMuMjA5LjE1MwIxNTE3ODYzNDICAg%3D%3D&wd=&vext=pid%3D%26emb%3DMTgzLjMuMjA5LjE1MwIxNTE3ODYzNDICAg%3D%3D%26bc%3D%26type%3D0">
+ <param name="quality" value="high"> 
+<param name="allowFullScreen" value="true" /> 
+<param name="IsAutoPlay" value="1" /> 
+<embed src="http://static.youku.com/v1.0.0387/v/swf/loader.swf?VideoIDS=XNjA3MTQ1MzY4&embedid=MTgzLjMuMjA5LjE1MwIxNTE3ODYzNDICAg%3D%3D&wd=&vext=pid%3D%26emb%3DMTgzLjMuMjA5LjE1MwIxNTE3ODYzNDICAg%3D%3D%26bc%3D%26type%3D0" width="256" height="182" allowFullScreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+</object>
+
+
+
+<!--
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="256" height="182">  
+ <param name="movie" value="Flvplayer.swf" />  
+  <param name="quality" value="high" />  
+<param name="allowFullScreen" value="true" />  
+   <param name="FlashVars" value="vcastr_file=fzlm/sysp/a/93.flv" />  
+   <embed src="Flvplayer.swf" allowfullscreen="true" flashvars="vcastr_file=fzlm/sysp/a/93.flv" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="256" height="182"></embed>  
+ </object>
+-->
+		
+				<!--
+					<a href='/#'  title='大业信托核心服务' >
+					<img src='/ad/ad_ind2/a/xcgg.jpg' alt='大业信托核心服务' /></a>
+				-->
+			</div>
+	  </div>
+
+            <div class="mod mod01 mod-notic" >
+            <div class="mhd"><b></b>
+                <h2><?php if ($_smarty_tpl->tpl_vars['cookie']->value) {?>当前用户<?php } else { ?>用户登录<?php }?></h2>
+            </div>
+             <div class="tab-cont">
+                <div class="cont hover">
+                    <?php if ($_smarty_tpl->tpl_vars['cookie']->value) {?>
+                    <p><span style="font-size:10px;"><?php echo $_smarty_tpl->tpl_vars['username']->value;?>
+</span>&nbsp;&nbsp;<a href="index.php?op=delete">退出登录</a></p>
+                    <?php } else { ?>
+                      <p>
+                        用户名:<input type="text" maxlength="26" id="username" size="30px;  name="k""/>
+                      </p>
+                      <p>
+                       密&nbsp;&nbsp;码:<input type="text" maxlength="26" id="password" size="30px; name="k""/>
+                      </p>
+                      <p style="float:left;">
+                        
+                        &nbsp; <span class="btn01bg" style="margin-top:-40px;">
+                          <a href="#"><input type="submit" value="登录" id="login" class="btn01" /></a>
+                        </span>
+                        </p>
+                        <p>
+                       
+                        &nbsp; <span class="btn01bg" style="margin-top:-40px;">
+                          <input type="button" value="注册" class="btn01" onclick="window.location.href='resiger.html'"/>
+                        </span>
+                        </p>
+                   
+                     <?php }?>
+
+                    
+              </div> 
+              
+                
+            
+          </div>
+      <div class="mod mod01 mod-notic" style="height:180px;">
+        <div class="mhd"><b></b>
+          <h2>在线客服</h2>
+        </div>
+        <div class="mbd" >
+    <div style="height:163px;width:227px; overflow:hidden;" id="sTxt1"> 
+               <p style="float:left;margin-top:15px;"><span>理财经理1:</span></p> <a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=7654321&Site=中国asp之家http://www.aspxhome.com&Menu=yes"> <img border="0" style="margin-top:10px;" SRC="http://wpa.qq.com/pa?p=1:7654321:1" alt="点击这里给我发消息"></a><br/><br/>
+          <p style="float:left;margin-top:15px;"><span>理财经理1:</span></p><a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=7654321&Site=中国asp之家http://www.aspxhome.com&Menu=yes"> <img border="0" style="margin-top:10px;" SRC="http://wpa.qq.com/pa?p=1:7654321:1" alt="点击这里给我发消息"></a><br/><br/>
+           <p style="float:left;margin-top:15px;"><span>理财经理1:</span></p><a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=7654321&Site=中国asp之家http://www.aspxhome.com&Menu=yes"> <img border="0" style="margin-top:10px;" SRC="http://wpa.qq.com/pa?p=1:7654321:1" alt="点击这里给我发消息"></a><br/>
+           </div>
+        </div>
+       </div>  
+       <style>
+       .mod-notic .mbd {
+        height: 168px;
+        padding: 8px 9px;
+        background: url(http://www.dytrustee.com/styles/index/images/notic.png) repeat;
+       }
+       </style>
+      
+      <div class="mod mod-ywjs">
+        <div class="mhd">
+          <h2>相关操作</h2>
+        </div>
+
+        <div class="mbd" style="margin-left:13px;margin-top:10px;">
+          <ul>
+            
+            <li class='yw01'>
+                <a href="list.php?op=class"   title='理财课堂' style="padding-left:80px;font-size:14px;">
+                理财课堂</a>
+            </li>
+            
+            <li class='yw02'>
+                <a href="reply.php"   title='客户留言' style="padding-left:80px;font-size:14px;">
+                客户留言</a>
+            </li>
+            
+            <li class='yw03'>
+                <a href="./templates/parter.html"   title='合作伙伴' style="padding-left:80px;font-size:14px;">
+                合作伙伴</a>
+            </li>
+           
+            
+          </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="margin-top:10px;text-align:center;">友情链接：<a href="#">四川信托</a> <a href="#">新华信托</a> <a href="#">建设银行</a> <a href="#">华润信托</a> <a href="#">平安信托</a> <a href="#">工商银行</a> <a href="#">中国银行</a> <a href="#">吉林信托</a> <a href="#">大业信托</a></p>
+<br/>
+</div>
+
+
+<div class="pft">
+
+	<p>版权所有：广州鑫泽投资管理有限公司</p>
+	<p>公司总部：广州市天河区体育东路140号南方证券大厦506  </p>
+    <p>E-mail:gdxinzetouzi@163.com </p>
+    <p>工作时间：工作日08:30-17:30</p>
+</div>
+
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>!window.jQuery && document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+<!--[if lt IE 9]>
+    <script src="js/selectivizr-and-extra-selectors.min.js"></script>
+    <script src="../../ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<script src="./templates/js/respond.min.js"></script>
+<script src="./templates/js/jquery.easing-1.3.min.js"></script>
+<script src="./templates/sliders/elastslider/jquery.eislideshow.js"></script>
+<script src="./templates/js/jquery.jcarousel.min.js"></script>
+<script src="./templates/js/jquery.cycle.all.min.js"></script>
+<script src="./templates/js/custom.js"></script>
+<script src="./templates/themeChanger/js/colorpicker.js"></script>
+<script src="./templates/themeChanger/js/themeChanger.js"></script>
+<script language="JavaScript" type="text/JavaScript">   
+ $("#login").click(function(){ 
+        $username=$('#username').val();
+        $password=$('#password').val();
+        if(!$username||!$password){
+            alert("选项有空值");
+        }
+        $.ajax({
+                   type: "POST",
+                   url: "deal.php",
+                   data: "login=1&username="+$('#username').val()+"&password="+$('#password').val()+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
+                    async: true,                    
+                      success: function (data) {
+                        
+                          if(data=='1'){
+                          window.location.href="index.php";
+                        }else{
+                          alert(data);
+                        }
+              
+                         
+                      
+                      }
+                });
+    }); 
+</script>
+</body>
+</html>
+
+<?php }} ?>
