@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-20 15:19:05
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-21 09:31:52
          compiled from ".\templates\product.html" */ ?>
 <?php /*%%SmartyHeaderCode:86275304ce9f103a34-08049996%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fbc19262e716d556ce956ef1d0c765492334ed78' => 
     array (
       0 => '.\\templates\\product.html',
-      1 => 1392908060,
+      1 => 1392970083,
       2 => 'file',
     ),
   ),
@@ -107,30 +107,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <h3>Travelling</h3>
                     </div> -->
                 </li>
-                <li>
-                    <img src="./templates/images/sliders/img_04.jpg" alt="image01" />
-                    <!-- <div class="ei-title">
-                        <h2>Panorama View of Budapest,  Hungary</h2>
-                        <h3>Photography</h3>
-                    </div> -->
-                </li>
-                <li>
-                    <img src="./templates/images/sliders/img_05.jpg" alt="image01" />
-                    <!-- <div class="ei-title">
-                        <h2>Panorama View of Budapest, Hungary</h2>
-                        <h3>Travelling</h3>
-                    </div> -->
-                </li>
+                
                 
             </ul><!-- ei-slider-large -->
              <ul class="ei-slider-thumbs">
                 
                 <li class="ei-slider-element"></li>
-                <li><a href="#">Slide 1</a><img src="" alt="thumb01" /></li>
-                <li><a href="#">Slide 2</a><img src="" alt="thumb02" /></li>
-                <li><a href="#">Slide 3</a><img src="" alt="thumb03" /></li>
-                <li><a href="#">Slide 4</a><img src="" alt="thumb04" /></li>
-                <li><a href="#">Slide 5</a><img src="" alt="thumb05" /></li>
+                <li><a href="#">Slide 1</a><img src=""  /></li>
+                <li><a href="#">Slide 2</a><img src=""  /></li>
+                <li><a href="#">Slide 3</a><img src=""  /></li>
                 
             </ul><!-- ei-slider-thumbs -->
             

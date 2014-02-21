@@ -5,21 +5,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1ddec8cb950b78236f575217ab324662c567ffca' => 
     array (
       0 => '.\\templates\\cp.html',
-      1 => 1392907187,
+      1 => 1392976212,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '52575304bd05c5d043-53348692',
   'cache_lifetime' => 120,
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_530613b632a3f7_30147286',
+  'unifunc' => 'content_5307215b0bbed5_94081077',
   'variables' => 
   array (
     'op' => 0,
   ),
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_530613b632a3f7_30147286')) {function content_530613b632a3f7_30147286($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if ($_valid && !is_callable('content_5307215b0bbed5_94081077')) {function content_5307215b0bbed5_94081077($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -33,6 +33,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <link rel="stylesheet" href="./templates/sliders/elastslider/elastic.css" media="screen" />
 <script type="text/javascript" src="./templates/js/swfobject.js"></script>
 <script type="text/javascript" src="./templates/js/mar.js"></script>
+<script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="./templates/ueditor/lang/zh-cn/zh-cn.js"></script>
     <script src="./templates/js/modernizr.custom.js"></script>
     <script src="./templates/js/video.js"></script>
     <script>_V_.options.flash.swf = 'js/video-js.swf';</script>
@@ -42,6 +47,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 .cls_container ul li{height:24px;line-height:24px;width:430px;float:left;display:inline;}
 .cls_container ul li span{float:right;}
 </style>
+<style type="text/css">
+        .clear {
+            clear: both;
+        }
+    </style>
 <!--[if IE 7]> 
 <style type="text/css">
     .mod{
@@ -72,7 +82,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </ul>
 </div>
 
-<div class="pbd" style="height:540px;">
+<div class="pbd" style="height:840px;">
         <div id="ei-slider" class="ei-slider">
             
             <ul class="ei-slider-large">
@@ -98,31 +108,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <h3>Travelling</h3>
                     </div> -->
                 </li>
-                <li>
-                    <img src="./templates/images/sliders/img_04.jpg" alt="image01" />
-                    <!-- <div class="ei-title">
-                        <h2>Panorama View of Budapest,  Hungary</h2>
-                        <h3>Photography</h3>
-                    </div> -->
-                </li>
-                <li>
-                    <img src="./templates/images/sliders/img_05.jpg" alt="image01" />
-                    <!-- <div class="ei-title">
-                        <h2>Panorama View of Budapest, Hungary</h2>
-                        <h3>Travelling</h3>
-                    </div> -->
-                </li>
+                
                 
             </ul><!-- ei-slider-large -->
             
             <ul class="ei-slider-thumbs">
                 
                 <li class="ei-slider-element"></li>
-                <li><a href="#">Slide 1</a><img src="images/thumbs/1.jpg" alt="thumb01" /></li>
-                <li><a href="#">Slide 2</a><img src="images/thumbs/2.jpg" alt="thumb02" /></li>
-                <li><a href="#">Slide 3</a><img src="images/thumbs/3.jpg" alt="thumb03" /></li>
-                <li><a href="#">Slide 4</a><img src="images/thumbs/4.jpg" alt="thumb04" /></li>
-                <li><a href="#">Slide 5</a><img src="images/thumbs/5.jpg" alt="thumb05" /></li>
+                <li><a href="#">Slide 1</a><img src=""  /></li>
+                <li><a href="#">Slide 2</a><img src=""  /></li>
+                <li><a href="#">Slide 3</a><img src=""  /></li>
                 
             </ul><!-- ei-slider-thumbs -->
             
@@ -200,7 +195,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
          <div class="mbd">
           <br/>
             <span style="color:red;">*</span>标&nbsp;&nbsp;&nbsp;&nbsp;题：<input type="text" id="subject" name="subject" style="width:300px;"><br/><br/>
-             <span style="float:left;"><span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：</span><textarea name="message" id="message" style="width:300px;height:100px;"></textarea>
+               <span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：<script id="editor" type="text/plain" style="width:100%;height:300px;"></script>
+
              <div class="mod mod01 mod-notic" style="height:180px;">
                       <span class="btn01bg" style="margin-top:10px;margin-left:160px;">
                           <input type="button" value="提交" id="submit" class="btn01" />
@@ -244,28 +240,30 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script src="./templates/themeChanger/js/colorpicker.js"></script>
 <script src="./templates/themeChanger/js/themeChanger.js"></script>
 <script language="JavaScript" type="text/JavaScript"> 
+
     $("#submit").click(function(){
         var subject=$('#subject').val();
-        var message=$('#message').val();
+        var message=UE.getEditor('editor').getContent();
 
         if(!subject||!message){
             alert("选项有空值");
-        }
-            $.ajax({
+        }else{
+          $.ajax({
                    type: "POST",
                    url: "deal.php",
-                   data: "submit=1&op="+$('#op').val()+"&subject="+$('#subject').val()+"&message="+$('#message').val()+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
+                   data: "submit=1&op="+$('#op').val()+"&subject="+$('#subject').val()+"&message="+message+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
                     async: true,                    
                       success: function (data) {
                         alert("发布成功");
                           window.location.reload();
 
-
-               
                       
                       }
                 });
+        }
+            
     });  
+      UE.getEditor('editor').setShow();
 </script>
 </body>
 </html>
