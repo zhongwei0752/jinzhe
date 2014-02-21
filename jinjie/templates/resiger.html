@@ -43,13 +43,13 @@
         <a href="/" class="logo"><img src="img/logo.png"/></a>
     </div>
     <ul class="nav">
-       <li style="background-image:none;"><a href="new.html">&nbsp;&nbsp;首&nbsp;页&nbsp;</a></li>
+      <li style="background-image:none;"><a href="../index.php">&nbsp;&nbsp;首&nbsp;页&nbsp;</a></li>
         <li><a href="instroduce.html">企业简介</a></li>
-        <li><a href="product.html">热销产品</a></li>
-        <li><a href="message.html">信息公告</a></li>
-        <li><a href="news.html">新闻资讯</a></li>
+         <li><a href="../list.php?op=product">热销产品</a></li>
+        <li><a href="../list.php?op=message">信息公告</a></li>
+        <li><a href="../list.php?op=news">新闻资讯</a></li>
         <li><a href="custom.html">客服中心</a></li>
-        <li><a href="people.html">人力资源</a></li>
+        <li><a href="../list.php?op=people">人力资源</a></li>
     </ul>
 </div>
 
@@ -114,10 +114,10 @@
                 </div>
 			  <div class="mod mod-ksfw" style="height: 240px;">
                  <ul>
-                  <li class="ksfw01"><a href="product.html">理财产品</a></li>
-                  <li class="ksfw02"><a href="invest.html">项目投资</a></li>
-                  <li class="ksfw03"><a href="/download/">第三方支付</a></li>
-                  <li class="ksfw04"><a href="/rlzy/zpxx/">公益信托</a></li>
+                  <li class="ksfw01"><a href="../list.php?op=product">理财产品</a></li>
+                  <li class="ksfw02"><a href="../list.php?op=invest">项目投资</a></li>
+                  <li class="ksfw03"><a href="../list.php?op=pay">第三方支付</a></li>
+                  <li class="ksfw04"><a href="../list.php?op=good">公益信托</a></li>
 <!--                   <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
                   <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
                 </ul>
@@ -291,14 +291,22 @@ a,img{border:0;}
         <div id="mail_error"></div>
       </div>
     </div><!--item end-->
-    
+    <div class="item">
+      <span class="label"><span class="red">*</span>身份证：</span>
+      <div class="fl">
+        <input type="text" id="idcard" name="idcard" class="text" tabindex="4"/>
+        <label id="idcard_succeed" class="blank" style="color:green;display:none;">√</label>
+        <span class="clear"></span>
+        <div id="idcard_error"></div>
+      </div>
+    </div><!--item end-->
  
     
     <div class="item">
       <span class="label"><span class="red">*</span>验证码：</span>
       <div class="fl">
         <input type="text" id="authcode" name="authcode" class="text text-1" MaxLength="6" tabindex="6" />
-        <label class="img"><img src="code.php" id="code" style="cursor:pointer;width:100px;height:26px;"/>
+        <label class="img"><img src="../code.php" id="code" style="cursor:pointer;width:100px;height:26px;"/>
         </label>
      
         <label id="authcode_succeed" class="blank" style="color:green;display:none;">√</label>
@@ -350,6 +358,7 @@ a,img{border:0;}
 <input type="hidden" name="telstatus" id="telstatus" value="">
 <input type="hidden" name="mailstatus" id="mailstatus" value="">
 <input type="hidden" name="authcodestatus" id="authcodestatus" value="">
+<input type="hidden" name="idcardstatus" id="idcardstatus" value="">
 
 <div class="pft">
 	<p>版权所有：广州鑫泽投资管理有限公司</p>
@@ -428,6 +437,15 @@ a,img{border:0;}
           $("#mailstatus").val('0');
         }   
     });
+    $("#idcard").change(function(){
+        var idcard= $("#idcard").val();
+        if(idcard){
+          $("#idcard_succeed").show();
+          $("#idcardstatus").val('1');
+        }else{
+          $("#idcardstatus").val('0');
+        }   
+    });
     $("#authcode").change(function(){
         var authcode= $("#authcode").val();
         var code=$.cookie('code');
@@ -446,7 +464,8 @@ a,img{border:0;}
         var telstatus= $("#telstatus").val();
         var mailstatus= $("#mailstatus").val();
         var authcodestatus= $("#authcodestatus").val();
-        if(usernamestatus&&pwdstatus&&pwd2status&&telstatus&&mailstatus&&authcodestatus){
+        var idcardstatus= $("#idcardstatus").val();
+        if(usernamestatus&&pwdstatus&&pwd2status&&telstatus&&mailstatus&&authcodestatus&&idcardstatus){
             $("#registsubmit").show();
         }else{
           $("#protocol").attr("checked", false);
@@ -457,7 +476,7 @@ a,img{border:0;}
             $.ajax({
                    type: "POST",
                    url: "deal.php",
-                   data: "registsubmit=1&username="+$('#username').val()+"&pwd="+$('#pwd').val()+"&pwd2="+$('#pwd2').val()+"tel="+$('#tel').val()+"&mail="+$('#mail').val()+"&authcode="+$('#authcode').val()+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
+                   data: "registsubmit=1&username="+$('#username').val()+"&pwd="+$('#pwd').val()+"&pwd2="+$('#pwd2').val()+"tel="+$('#tel').val()+"&mail="+$('#mail').val()+"&authcode="+$('#authcode').val()+"&idcard="+$('#idcard').val()+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
                     async: true,                    
                       success: function (data) {
                         if(data=='1'){

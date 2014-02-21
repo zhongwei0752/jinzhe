@@ -8,6 +8,7 @@ $username=$_POST['username'];
 $pwd=$_POST['pwd'];
 $tel=$_POST['tel'];
 $mail=$_POST['mail'];
+$idcard=$_POST['idcard'];
 include("config.php");
 $check_query = mysql_query("select username from space where username='$username'");
 if(mysql_fetch_array($check_query)){
@@ -15,7 +16,7 @@ if(mysql_fetch_array($check_query)){
     exit;
 }
 $regdate = time();
-$sql = "INSERT INTO space (username,pwd,tel,mail,regdate)VALUES('$username','$pwd','$tel','$mail','$regdate')";
+$sql = "INSERT INTO space (username,pwd,tel,mail,idcard,regdate)VALUES('$username','$pwd','$tel','$mail','$idcard','$regdate')";
 if(mysql_query($sql)){
 	$check_query1 = mysql_query("select * from space where username='$username'");
 	$value1=mysql_fetch_array($check_query1);
