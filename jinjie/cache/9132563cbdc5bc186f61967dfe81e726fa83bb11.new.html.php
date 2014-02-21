@@ -5,25 +5,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9132563cbdc5bc186f61967dfe81e726fa83bb11' => 
     array (
       0 => '.\\templates\\new.html',
-      1 => 1392911915,
+      1 => 1392965799,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '75085300779e5f8677-17946466',
   'cache_lifetime' => 120,
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_5306262d612ce9_10978555',
-  'variables' => 
-  array (
-    'list1' => 0,
-    'list' => 0,
-    'list2' => 0,
-    'cookie' => 1,
-    'username' => 1,
-  ),
+  'unifunc' => 'content_53070d0279b8c6_47101183',
   'has_nocache_code' => true,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5306262d612ce9_10978555')) {function content_5306262d612ce9_10978555($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if ($_valid && !is_callable('content_53070d0279b8c6_47101183')) {function content_53070d0279b8c6_47101183($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -206,54 +198,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div id="myscroll" class="cls_container">
         <ul>
                             <li>
-                    
-                    <a href="more.php?id=00016&op=product">
-                    阿斯顿过得更好</a>
-                    <span>2014-02-20</span>
-                </li>
-　　                          <li>
-                    
-                    <a href="more.php?id=00015&op=product">
-                    啊圣诞狗狗你让他</a>
-                    <span>2014-02-20</span>
-                </li>
-　　                          <li>
-                    
-                    <a href="more.php?id=00014&op=product">
-                    阿斯顿发送给换地方</a>
-                    <span>2014-02-20</span>
-                </li>
-　　                          <li>
-                    
-                    <a href="more.php?id=00013&op=product">
-                    自行车v大飞vsdcsd1</a>
-                    <span>2014-02-20</span>
-                </li>
-　　                          <li>
-                    
-                    <a href="more.php?id=00012&op=product">
-                    娃儿东方闪电擦伤</a>
-                    <span>2014-02-20</span>
-                </li>
-　　                          <li>
-                    
-                    <a href="more.php?id=00011&op=product">
-                    热帖分公司第三代</a>
-                    <span>2014-02-20</span>
-                </li>
-　　                          <li>
-                    
-                    <a href="more.php?id=00010&op=product">
-                    23423</a>
-                    <span>2014-02-20</span>
-                </li>
-　　                          <li>
-                    
-                    <a href="more.php?id=00009&op=product">
-                    34534</a>
-                    <span>2014-02-20</span>
-                </li>
-　　                          <li>
                     
                     <a href="more.php?id=00008&op=product">
                     测试</a>
@@ -451,7 +395,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <p>
                        
                         &nbsp; <span class="btn01bg" style="margin-top:-40px;">
-                          <input type="button" value="注册" class="btn01" onclick="window.location.href='resiger.html'"/>
+                          <input type="button" value="注册" class="btn01" onclick="window.location.href='./templates/resiger.html'"/>
                         </span>
                         </p>
                    

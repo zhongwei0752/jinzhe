@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-20 15:58:37
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-21 07:31:55
          compiled from ".\templates\new.html" */ ?>
 <?php /*%%SmartyHeaderCode:75085300779e5f8677-17946466%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9132563cbdc5bc186f61967dfe81e726fa83bb11' => 
     array (
       0 => '.\\templates\\new.html',
-      1 => 1392911915,
+      1 => 1392965799,
       2 => 'file',
     ),
   ),
@@ -425,7 +425,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['sec2']['last']       = ($_sm
                         <p>
                        
                         &nbsp; <span class="btn01bg" style="margin-top:-40px;">
-                          <input type="button" value="注册" class="btn01" onclick="window.location.href='resiger.html'"/>
+                          <input type="button" value="注册" class="btn01" onclick="window.location.href='./templates/resiger.html'"/>
                         </span>
                         </p>
                    

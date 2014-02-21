@@ -1,4 +1,29 @@
-
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-21 08:14:29
+         compiled from ".\templates\reply.html" */ ?>
+<?php /*%%SmartyHeaderCode:147675305a5bca8e115-42299385%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '57a6f7a8d8ce4b358622a05af5d51e850659b30d' => 
+    array (
+      0 => '.\\templates\\reply.html',
+      1 => 1392970465,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '147675305a5bca8e115-42299385',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_5305a5bcaffb53_03637843',
+  'variables' => 
+  array (
+    'cookie' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5305a5bcaffb53_03637843')) {function content_5305a5bcaffb53_03637843($_smarty_tpl) {?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -100,12 +125,13 @@
 		  
 			  <div class="mod mod01 mod-notic">
                 <div class="mhd"><b></b>
-                  <h2>信息公告</h2>
+                  <h2>客服中心</h2>
                 </div>
-			  <div class="mod mod-ksfw" style="height: 240px;">
+			  <div class="mod mod-ksfw" style="height: 120px;">
                 <ul>
-                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=message">通知公告</a></li>
-                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=show">信息披露</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="./templates/custom.html">在线客服</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=reply">客户留言</a></li>
+
 <!--                   <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
                   <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
                 </ul>
@@ -139,7 +165,8 @@
 			  
 				
 			</div>
-		
+	
+            
 		  </div>
 		  
 		  
@@ -158,24 +185,27 @@
     <div class="group gp2" style="width:720px;">
       <div class="mod mod-cpxx mod02" >
         <div class="mhd" style="background: url(./templates/img/lanmu.png) 0 -94px no-repeat;"> 
-          <h2>通知公告<{if $cookie}><a href="cp.php?op=message" style="float:right;color:#333;">发布</a><{/if}></h2>
+         <h2>发布留言<?php if ($_smarty_tpl->tpl_vars['cookie']->value) {?><a href="replymore.php" style="float:right;color:#333;">查看评论</a><?php }?></h2>
         </div>
-            <div class="mbd">
-           <ul class="disc01" style="height:260px;">         
-            　<{section name=sec1 loop=$list}>
-               <li style="line-height:6px;">
-                    <span><{$list[sec1].dateline}></span>
-                    <a href='more.php?id=<{$list[sec1].id}>&op=message'  title='<{$list[sec1].subject}>'>
-                    <{$list[sec1].subject}></a>
-                </li>
-　　          
-　　          <{/section}>
-            
-          </ul>
-            <p style="float:right;"><{$pageup}><{$pagedown}><{$pageconfig}></p><br/>
+         <div class="mbd">
+          <br/>
+            <span style="color:red;">*</span>标&nbsp;&nbsp;&nbsp;&nbsp;题：<input type="text" name="subject" id="subject" style="width:300px;"><br/>
+            <span style="color:red;">*</span>联系方式：<input type="text" name="tel" id="tel" style="width:300px;"><br/>
+            <span style="color:red;">*</span>姓&nbsp;&nbsp;&nbsp;&nbsp;名：<input type="text" id="name" name="name" style="width:130px;">&nbsp;<span style="color:red;">*</span>问题类型:
+            <select style="width:100px;" id="qclass">
+              <option value ="咨询">咨询</option>
+              <option value ="回复">回复</option>
+              <option value="建议">建议</option>
+            </select><br/>
+             <span style="float:left;"><span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：</span><textarea name="message" style="width:300px;height:100px;" id="content"></textarea>
+             <div class="mod mod01 mod-notic" style="height:180px;">
+                      <span class="btn01bg" style="margin-top:10px;margin-left:160px;">
+                          <input type="button" id="submit" value="提交" class="btn01" />
+                        </span>
+                    
+                    </div>
             </div>
            
-
       </div> 
       
     </div>
@@ -211,6 +241,34 @@
 <script src="./templates/js/custom.js"></script>
 <script src="./templates/themeChanger/js/colorpicker.js"></script>
 <script src="./templates/themeChanger/js/themeChanger.js"></script>
+<script language="JavaScript" type="text/JavaScript"> 
+    $("#submit").click(function(){
+        var subject=$('#subject').val();
+        var tel=$('#tel').val();
+        var name=$('#name').val();
+        var qclass=$('#qclass').val();
+        var content=$('#content').val();
+        if(!subject||!tel||!name||!qclass||!content){
+            alert("选项有空值");
+        }else{
+            $.ajax({
+                   type: "POST",
+                   url: "deal.php",
+                   data: "reply=1&subject="+$('#subject').val()+"&tel="+$('#tel').val()+"&name="+$('#name').val()+"&qclass="+$('#qclass').val()+"&content="+$('#content').val()+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
+                    async: true,                    
+                      success: function (data) {
+                        alert("发布成功");
+                          window.location.reload();
+
+
+               
+                      
+                      }
+                });
+          }
+    });  
+</script>
 </body>
 </html>
 
+<?php }} ?>
