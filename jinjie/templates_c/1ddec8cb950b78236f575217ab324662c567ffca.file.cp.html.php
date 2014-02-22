@@ -1,4 +1,33 @@
-
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-22 14:34:39
+         compiled from ".\templates\cp.html" */ ?>
+<?php /*%%SmartyHeaderCode:41645308b57facdb59-75592263%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '1ddec8cb950b78236f575217ab324662c567ffca' => 
+    array (
+      0 => '.\\templates\\cp.html',
+      1 => 1393079649,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '41645308b57facdb59-75592263',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'subject' => 0,
+    'message' => 0,
+    'op' => 0,
+    'update' => 0,
+    'id' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_5308b57fc0af57_59094984',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5308b57fc0af57_59094984')) {function content_5308b57fc0af57_59094984($_smarty_tpl) {?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -174,8 +203,10 @@
         </div>
          <div class="mbd">
           <br/>
-            <span style="color:red;">*</span>标&nbsp;&nbsp;&nbsp;&nbsp;题：<input type="text" id="subject" name="subject" style="width:300px;" <{if $subject}>value="<{$subject}>"<{/if}>><br/><br/>
-               <span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：<script id="editor" type="text/plain" style="width:100%;height:300px;"><{if $message}><{$message}><{/if}></script>
+            <span style="color:red;">*</span>标&nbsp;&nbsp;&nbsp;&nbsp;题：<input type="text" id="subject" name="subject" style="width:300px;" <?php if ($_smarty_tpl->tpl_vars['subject']->value) {?>value="<?php echo $_smarty_tpl->tpl_vars['subject']->value;?>
+"<?php }?>><br/><br/>
+               <span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：<script id="editor" type="text/plain" style="width:100%;height:300px;"><?php if ($_smarty_tpl->tpl_vars['message']->value) {?><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+<?php }?></script>
 
              <div class="mod mod01 mod-notic" style="height:180px;">
                       <span class="btn01bg" style="margin-top:10px;margin-left:160px;">
@@ -194,9 +225,12 @@
   </div>
 
 </div>
-<input type="hidden" id="op" value="<{$op}>">
-<input type="hidden" id="update" value="<{$update}>">
-<input type="hidden" id="id" value="<{$id}>">
+<input type="hidden" id="op" value="<?php echo $_smarty_tpl->tpl_vars['op']->value;?>
+">
+<input type="hidden" id="update" value="<?php echo $_smarty_tpl->tpl_vars['update']->value;?>
+">
+<input type="hidden" id="id" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+">
 
 <div class="pft">
 	<p>版权所有：广州鑫泽投资管理有限公司</p>
@@ -249,3 +283,4 @@
 </body>
 </html>
 
+<?php }} ?>

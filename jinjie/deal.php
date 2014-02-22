@@ -43,10 +43,16 @@ if($login){
 if($submit){
 	$subject=$_POST['subject'];
 	$message=$_POST['message'];
+	$update=$_POST['update'];
 	$op=$_POST['op'];
+	$id=$_POST['id'];
 	$dateline = time();
 	include("config.php");
+	if($update){
+	$sql = "UPDATE $op SET subject='$subject',message='$message' WHERE id = '$id'";
+	}else{
 	$sql = "INSERT INTO $op (subject,message,dateline)VALUES('$subject','$message','$dateline')";
+		}
 	mysql_query($sql);
 }
 if($reply){

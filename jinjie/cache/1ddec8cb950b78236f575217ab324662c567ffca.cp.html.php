@@ -5,21 +5,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1ddec8cb950b78236f575217ab324662c567ffca' => 
     array (
       0 => '.\\templates\\cp.html',
-      1 => 1392976212,
+      1 => 1393079649,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '52575304bd05c5d043-53348692',
   'cache_lifetime' => 120,
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_5307215b0bbed5_94081077',
+  'unifunc' => 'content_5308b563bc7496_81070158',
   'variables' => 
   array (
+    'subject' => 0,
+    'message' => 0,
     'op' => 0,
+    'update' => 0,
+    'id' => 0,
   ),
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5307215b0bbed5_94081077')) {function content_5307215b0bbed5_94081077($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if ($_valid && !is_callable('content_5308b563bc7496_81070158')) {function content_5308b563bc7496_81070158($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,7 +38,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script type="text/javascript" src="./templates/js/swfobject.js"></script>
 <script type="text/javascript" src="./templates/js/mar.js"></script>
 <script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.all.js"> </script>
     <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
     <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
     <script type="text/javascript" charset="utf-8" src="./templates/ueditor/lang/zh-cn/zh-cn.js"></script>
@@ -194,8 +198,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
          <div class="mbd">
           <br/>
-            <span style="color:red;">*</span>标&nbsp;&nbsp;&nbsp;&nbsp;题：<input type="text" id="subject" name="subject" style="width:300px;"><br/><br/>
-               <span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：<script id="editor" type="text/plain" style="width:100%;height:300px;"></script>
+            <span style="color:red;">*</span>标&nbsp;&nbsp;&nbsp;&nbsp;题：<input type="text" id="subject" name="subject" style="width:300px;" value="43534"><br/><br/>
+               <span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：<script id="editor" type="text/plain" style="width:100%;height:300px;"><table width="572"><tbody><tr style=";padding: 0px;height: 21px" class="firstRow"><td valign="top" width="96" style="padding: 0px 7px; border-width: 1px; border-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0"><span style="font-family: 黑体;font-size: 16px;font-weight: bold">产品名称</span></p></td><td valign="top" width="476" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: 1px 1px 1px medium; border-left-style: none; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0;text-align: center"><span style="font-size: 14px">鑫泽<span style="font-family:Times New Roman">-</span><span style="font-family:宋体">成都银传投资股权投资信托计划</span></span></p></td></tr><tr style=";padding: 0px;height: 21px"><td valign="top" width="96" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px; border-top-style: none; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0"><span style="font-family: 黑体;font-size: 16px;font-weight: bold">状态</span></p></td><td valign="top" width="476" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px medium; border-top-style: none; border-left-style: none; border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0;text-align: center"><br/></p></td></tr><tr style=";padding: 0px;height: 21px"><td valign="top" width="96" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px; border-top-style: none; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0"><span style="font-family: 黑体;font-size: 16px;font-weight: bold">预期收益</span></p></td><td valign="top" width="476" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px medium; border-top-style: none; border-left-style: none; border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0;text-align: center"><br/></p></td></tr><tr style=";padding: 0px;height: 21px"><td valign="top" width="96" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px; border-top-style: none; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0"><span style="font-family: 黑体;font-size: 16px;font-weight: bold">投资期限</span></p></td><td valign="top" width="476" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px medium; border-top-style: none; border-left-style: none; border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0;text-align: center"><br/></p></td></tr><tr style=";padding: 0px;height: 21px"><td valign="top" width="96" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px; border-top-style: none; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0"><span style="font-family: 黑体;font-size: 16px;font-weight: bold">发行机构</span></p></td><td valign="top" width="476" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px medium; border-top-style: none; border-left-style: none; border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0;text-align: center"></p></td></tr><tr style=";padding: 0px;height: 204px"><td valign="top" width="96" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px; border-top-style: none; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0);"><br/></td><td valign="top" width="476" style="padding: 0px 7px; border-bottom-color: rgb(0, 0, 0); border-width: medium 1px 1px medium; border-top-style: none; border-left-style: none; border-right-color: rgb(0, 0, 0);"><p style="margin-top: 0;margin-bottom: 0;line-height: 21px"><br/></p></td></tr></tbody></table><p><br/></p></script>
 
              <div class="mod mod01 mod-notic" style="height:180px;">
                       <span class="btn01bg" style="margin-top:10px;margin-left:160px;">
@@ -215,6 +219,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 </div>
 <input type="hidden" id="op" value="product">
+<input type="hidden" id="update" value="1">
+<input type="hidden" id="id" value="00035">
 
 <div class="pft">
 	<p>版权所有：广州鑫泽投资管理有限公司</p>
@@ -244,14 +250,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     $("#submit").click(function(){
         var subject=$('#subject').val();
         var message=UE.getEditor('editor').getContent();
-
         if(!subject||!message){
             alert("选项有空值");
         }else{
           $.ajax({
                    type: "POST",
                    url: "deal.php",
-                   data: "submit=1&op="+$('#op').val()+"&subject="+$('#subject').val()+"&message="+message+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
+                   data: "submit=1&id="+$('#id').val()+"&update="+$('#update').val()+"&op="+$('#op').val()+"&subject="+$('#subject').val()+"&message="+message+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
                     async: true,                    
                       success: function (data) {
                         alert("发布成功");

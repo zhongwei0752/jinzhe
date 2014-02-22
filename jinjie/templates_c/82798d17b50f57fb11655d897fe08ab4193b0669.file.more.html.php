@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-21 09:45:55
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-22 13:18:30
          compiled from ".\templates\more.html" */ ?>
 <?php /*%%SmartyHeaderCode:116605305667ab087e2-58049719%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '82798d17b50f57fb11655d897fe08ab4193b0669' => 
     array (
       0 => '.\\templates\\more.html',
-      1 => 1392970759,
+      1 => 1393075092,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'name' => 0,
+    'viewnum' => 0,
     'subject' => 0,
     'message' => 0,
+    'cookie' => 0,
+    'url' => 0,
+    'url1' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -195,9 +199,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       <div class="mod mod-cpxx mod02" >
         <div class="mhd" style="background: url(./templates/img/lanmu.png) 0 -94px no-repeat;"> 
           <h2><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
-</h2>
+<span style="float:right;color:#333">点击量:<?php echo $_smarty_tpl->tpl_vars['viewnum']->value;?>
+<span></h2>
         </div>
         <div  style="width:720px;">
+
           <br>
           <p style="text-align:center;font-size:14px;"><?php echo $_smarty_tpl->tpl_vars['subject']->value;?>
 </p>
@@ -207,7 +213,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
           <br/>
 
             </div>
-           
+          <?php if ($_smarty_tpl->tpl_vars['cookie']->value) {?> <span style="float:right;"><a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+">修改</a>|<a href="<?php echo $_smarty_tpl->tpl_vars['url1']->value;?>
+">删除</a></span><?php }?>
 
       </div> 
       

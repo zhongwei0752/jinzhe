@@ -9302,7 +9302,7 @@ UE.plugin = function(){
 UE.plugins['defaultfilter'] = function () {
     var me = this;
     me.setOpt({
-        'allowDivTransToP':true,
+        'allowDivTransToP':false,
         'disabledTableInTable':true
     });
     //默认的过滤处理
@@ -9330,7 +9330,7 @@ UE.plugins['defaultfilter'] = function () {
                     return;
                 }
                 switch (node.tagName) {
-                    case 'style':
+                    /*case 'style':
                     case 'script':
                         node.setAttr({
                             cdata_tag: node.tagName,
@@ -9455,7 +9455,7 @@ UE.plugins['defaultfilter'] = function () {
                         if(me.options.disabledTableInTable && tdParent(node)){
                             node.parentNode.insertBefore(UE.uNode.createText(node.innerText()),node);
                             node.parentNode.removeChild(node)
-                        }
+                        }*/
                 }
 
             }
@@ -9482,7 +9482,7 @@ UE.plugins['defaultfilter'] = function () {
                     return;
                 }
                 switch (node.tagName) {
-                    case 'div':
+                   /* case 'div':
                         if (val = node.getAttr('cdata_tag')) {
                             node.tagName = val;
                             node.appendChild(UE.uNode.createText(node.getAttr('cdata_data')));
@@ -9503,7 +9503,7 @@ UE.plugins['defaultfilter'] = function () {
                                 'src': node.getAttr('_src'),
                                 '_src': ''
                             })
-                        }
+                        }*/
 
 
                 }

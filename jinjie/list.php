@@ -34,7 +34,6 @@ $url=$_SERVER['REQUEST_URI'];
 $url=parse_url($url);
 $url=$url['path'];
  
- 
 $sql="SELECT * FROM `$op` order by id DESC";
 $db_list=mysql_query($sql);
  
@@ -62,16 +61,16 @@ if ($pages==1){                  //如果总页面只有一页的话，将“上
 switch($pageval){
 	case 1 :{
 		$pageup="首页";
-		$pagedown="<a href=$url?page=".($pageval+1).">下一页</a>";
+		$pagedown="<a href=$url?page=".($pageval+1)."&op=$op>下一页</a>";
 		break;
 	}
 	default :{
-		$pageup="<a href=$url?page=".($pageval-1).">上一页</a>";
-		$pagedown="<a href=$url?page=".($pageval+1).">下一页</a>";
+		$pageup="<a href=$url?page=".($pageval-1)."&op=$op>上一页</a>";
+		$pagedown="<a href=$url?page=".($pageval+1)."&op=$op>下一页</a>";
 	    break;
 	}
 	case $pages :{
-		$pageup="<a href=$url?page=".($pageval-1).">上一页</a>";
+		$pageup="<a href=$url?page=".($pageval-1)."&op=$op>上一页</a>";
 		$pagedown="末页";
 		break;
     }
@@ -80,6 +79,7 @@ switch($pageval){
  
 }$smarty->assign("pageconfig",$pageconfig);
 //==================================================
+
 $sql_list="SELECT * FROM `$op` order by id DESC LIMIT $page,$pagesize ";        //由此控制数据显示数量部分
 $db_list_list=mysql_query($sql_list);
 while($row=mysql_fetch_array($db_list_list)){

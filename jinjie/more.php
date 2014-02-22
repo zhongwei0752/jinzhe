@@ -46,10 +46,17 @@ if($op=='product'){
 }
 include("config.php");
 $query = mysql_query("select * from $op where id='$id'");
+mysql_query("UPDATE $op SET viewnum = viewnum+1 WHERE id = '$id'");
 $value=  mysql_fetch_array($query);
 $smarty->assign("subject",$value['subject']);
+$smarty->assign("viewnum",$value['viewnum']);
 $smarty->assign("message",$value['message']);
 $smarty->assign("name",$name);
-
-
+if($_COOKIE['uid']=='1'){
+	$smarty->assign("cookie",true);
+}
+$url="cp.php?op=$op&id=$id";
+$url1="cp.php?op=$op&id=$id&action=delete";
+$smarty->assign("url",$url);
+$smarty->assign("url1",$url1);
 $smarty->display('more.html');

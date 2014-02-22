@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-21 07:31:55
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-22 12:00:50
          compiled from ".\templates\new.html" */ ?>
 <?php /*%%SmartyHeaderCode:75085300779e5f8677-17946466%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9132563cbdc5bc186f61967dfe81e726fa83bb11' => 
     array (
       0 => '.\\templates\\new.html',
-      1 => 1392965799,
+      1 => 1393070442,
       2 => 'file',
     ),
   ),
@@ -67,7 +67,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 <div class="phd">
 	<div class="phdtop">
-        <p style="float: right;padding: 0px 15px 0 0px;font-size:12px;"><img src="./templates/weixin.jpg" style="width:18px;float:left;"/><span>&nbsp;微信公众号</span>|<img src="./templates/xinlang.jpg" style="width:12px;"/></span>&nbsp;新浪微博</span>|<img src="./templates/shoucang.jpg" style="width:14px;"/><span style="padding-top:-10px;">&nbsp;加入收藏</span></p>
+        <p style="float: right;padding: 0px 15px 0 0px;font-size:12px;"><img src="./templates/weixin.jpg" style="width:18px;float:left;"/><span>&nbsp;微信公众号</span>|<img src="./templates/xinlang.jpg" style="width:12px;"/></span>&nbsp;新浪微博</span>|<img src="./templates/shoucang.jpg" style="width:14px;"/><span style="padding-top:-10px;">&nbsp;<a href="http://mail.gd-xinze.com/">企邮登陆</a></span></p>
         <p style="float: right;clear: right;padding: 10px 15px 0 80px;color:red;font-size:16px;">财富热线：020-89209004/13544381605</p>
         <a href="/" class="logo"><img src="./templates/img/logo.png"/></a>
     </div>

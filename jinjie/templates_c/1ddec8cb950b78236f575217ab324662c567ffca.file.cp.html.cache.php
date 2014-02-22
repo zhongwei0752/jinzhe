@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-21 09:50:18
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-22 14:34:11
          compiled from ".\templates\cp.html" */ ?>
 <?php /*%%SmartyHeaderCode:52575304bd05c5d043-53348692%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1ddec8cb950b78236f575217ab324662c567ffca' => 
     array (
       0 => '.\\templates\\cp.html',
-      1 => 1392976212,
+      1 => 1393079649,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5304bd05cff9d7_99794221',
   'variables' => 
   array (
+    'subject' => 0,
+    'message' => 0,
     'op' => 0,
+    'update' => 0,
+    'id' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -40,7 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script type="text/javascript" src="./templates/js/swfobject.js"></script>
 <script type="text/javascript" src="./templates/js/mar.js"></script>
 <script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.all.js"> </script>
     <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
     <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
     <script type="text/javascript" charset="utf-8" src="./templates/ueditor/lang/zh-cn/zh-cn.js"></script>
@@ -200,8 +204,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
          <div class="mbd">
           <br/>
-            <span style="color:red;">*</span>标&nbsp;&nbsp;&nbsp;&nbsp;题：<input type="text" id="subject" name="subject" style="width:300px;"><br/><br/>
-               <span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：<script id="editor" type="text/plain" style="width:100%;height:300px;"></script>
+            <span style="color:red;">*</span>标&nbsp;&nbsp;&nbsp;&nbsp;题：<input type="text" id="subject" name="subject" style="width:300px;" <?php if ($_smarty_tpl->tpl_vars['subject']->value) {?>value="<?php echo $_smarty_tpl->tpl_vars['subject']->value;?>
+"<?php }?>><br/><br/>
+               <span style="color:red;">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;容：<script id="editor" type="text/plain" style="width:100%;height:300px;"><?php if ($_smarty_tpl->tpl_vars['message']->value) {?><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+<?php }?></script>
 
              <div class="mod mod01 mod-notic" style="height:180px;">
                       <span class="btn01bg" style="margin-top:10px;margin-left:160px;">
@@ -221,6 +227,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 </div>
 <input type="hidden" id="op" value="<?php echo $_smarty_tpl->tpl_vars['op']->value;?>
+">
+<input type="hidden" id="update" value="<?php echo $_smarty_tpl->tpl_vars['update']->value;?>
+">
+<input type="hidden" id="id" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
 ">
 
 <div class="pft">
@@ -251,14 +261,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     $("#submit").click(function(){
         var subject=$('#subject').val();
         var message=UE.getEditor('editor').getContent();
-
         if(!subject||!message){
             alert("选项有空值");
         }else{
           $.ajax({
                    type: "POST",
                    url: "deal.php",
-                   data: "submit=1&op="+$('#op').val()+"&subject="+$('#subject').val()+"&message="+message+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
+                   data: "submit=1&id="+$('#id').val()+"&update="+$('#update').val()+"&op="+$('#op').val()+"&subject="+$('#subject').val()+"&message="+message+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
                     async: true,                    
                       success: function (data) {
                         alert("发布成功");

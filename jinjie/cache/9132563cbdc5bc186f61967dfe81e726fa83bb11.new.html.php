@@ -5,17 +5,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9132563cbdc5bc186f61967dfe81e726fa83bb11' => 
     array (
       0 => '.\\templates\\new.html',
-      1 => 1392965799,
+      1 => 1393070442,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '75085300779e5f8677-17946466',
   'cache_lifetime' => 120,
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_53071d064972c1_84212680',
+  'unifunc' => 'content_530891725c6cd1_76337314',
+  'variables' => 
+  array (
+    'list1' => 0,
+    'list' => 0,
+    'list2' => 0,
+    'cookie' => 1,
+    'username' => 1,
+  ),
   'has_nocache_code' => true,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53071d064972c1_84212680')) {function content_53071d064972c1_84212680($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if ($_valid && !is_callable('content_530891725c6cd1_76337314')) {function content_530891725c6cd1_76337314($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -53,7 +61,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 <div class="phd">
 	<div class="phdtop">
-        <p style="float: right;padding: 0px 15px 0 0px;font-size:12px;"><img src="./templates/weixin.jpg" style="width:18px;float:left;"/><span>&nbsp;微信公众号</span>|<img src="./templates/xinlang.jpg" style="width:12px;"/></span>&nbsp;新浪微博</span>|<img src="./templates/shoucang.jpg" style="width:14px;"/><span style="padding-top:-10px;">&nbsp;加入收藏</span></p>
+        <p style="float: right;padding: 0px 15px 0 0px;font-size:12px;"><img src="./templates/weixin.jpg" style="width:18px;float:left;"/><span>&nbsp;微信公众号</span>|<img src="./templates/xinlang.jpg" style="width:12px;"/></span>&nbsp;新浪微博</span>|<img src="./templates/shoucang.jpg" style="width:14px;"/><span style="padding-top:-10px;">&nbsp;<a href="http://mail.gd-xinze.com/">企邮登陆</a></span></p>
         <p style="float: right;clear: right;padding: 10px 15px 0 80px;color:red;font-size:16px;">财富热线：020-89209004/13544381605</p>
         <a href="/" class="logo"><img src="./templates/img/logo.png"/></a>
     </div>
@@ -199,27 +207,123 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <ul>
                             <li>
                     
-                    <a href="more.php?id=00008&op=product">
-                    测试</a>
-                    <span>2014-02-19</span>
+                    <a href="more.php?id=00034&op=product">
+                    43534</a>
+                    <span>2014-02-22</span>
                 </li>
 　　                          <li>
                     
-                    <a href="more.php?id=00007&op=product">
-                    温热污染</a>
-                    <span>2014-02-19</span>
+                    <a href="more.php?id=00033&op=product">
+                    345345</a>
+                    <span>2014-02-22</span>
                 </li>
 　　                          <li>
                     
-                    <a href="more.php?id=00006&op=product">
-                    34543</a>
-                    <span>2014-02-19</span>
+                    <a href="more.php?id=00032&op=product">
+                    5465464</a>
+                    <span>2014-02-22</span>
                 </li>
 　　                          <li>
                     
-                    <a href="more.php?id=00005&op=product">
+                    <a href="more.php?id=00031&op=product">
+                    5675675</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00030&op=product">
+                    56756</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00029&op=product">
+                    23424</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00028&op=product">
+                    3543</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00027&op=product">
+                    234234</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00026&op=product">
+                    5424323</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00025&op=product">
+                    4654654</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00024&op=product">
+                    567567</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00023&op=product">
+                    45654</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00022&op=product">
                     5675</a>
-                    <span>2014-02-19</span>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00021&op=product">
+                    567567</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00020&op=product">
+                    3453</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00019&op=product">
+                    鑫泽-常州侨裕集团信托贷款集合资金信托计划</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00018&op=product">
+                    鑫泽-常州侨裕集团信托贷款集合资金信托计划</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00017&op=product">
+                    鑫泽-常州侨裕集团信托贷款集合资金信托计划</a>
+                    <span>2014-02-22</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00016&op=product">
+                    阿斯顿过得更好</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00015&op=product">
+                    啊圣诞狗狗你让他</a>
+                    <span>2014-02-20</span>
                 </li>
 　　                      </ul>
             </div>
