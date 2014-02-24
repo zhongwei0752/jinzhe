@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-24 15:03:58
-         compiled from ".\templates\class.html" */ ?>
-<?php /*%%SmartyHeaderCode:3196153061f0ada8871-10194930%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-24 15:07:36
+         compiled from ".\templates\net.html" */ ?>
+<?php /*%%SmartyHeaderCode:32356530b5c1cbc9966-21025853%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '7df73bcbb933c54396d1c947b30a216fc2ebe250' => 
+    '625f30ffbf8455766e4ecb89e5e415a8e471ee91' => 
     array (
-      0 => '.\\templates\\class.html',
-      1 => 1393252058,
+      0 => '.\\templates\\net.html',
+      1 => 1393254454,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3196153061f0ada8871-10194930',
+  'nocache_hash' => '32356530b5c1cbc9966-21025853',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_53061f0ae69416_80311890',
+  'unifunc' => 'content_530b5c1cc6afe1_80137853',
   'variables' => 
   array (
     'cookie' => 0,
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53061f0ae69416_80311890')) {function content_53061f0ae69416_80311890($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_530b5c1cc6afe1_80137853')) {function content_530b5c1cc6afe1_80137853($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
   <div class="part pt-main" style="width:960px;">
 
@@ -37,12 +37,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		  
 			  <div class="mod mod01 mod-notic">
                 <div class="mhd"><b></b>
-                  <h2>理财课堂</h2>
+                  <h2>公司简介</h2>
                 </div>
 			  <div class="mod mod-ksfw" style="height: 240px;">
                 <ul>
-                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=class">信托知识</a></li>
-                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=money">理财知识</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=instroduce">企业背景</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=culture">企业文化</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=say">董事长致辞</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=net">分公司网络</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=fa">发展历程</a></li>
 <!--                   <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
                   <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
                 </ul>
@@ -76,7 +79,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			  
 				
 			</div>
-		
+			    
 		  </div>
 		  
 		  
@@ -95,12 +98,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="group gp2" style="width:720px;">
       <div class="mod mod-cpxx mod02" >
         <div class="mhd" style="background: url(./templates/img/lanmu.png) 0 -94px no-repeat;"> 
-          <h2>信托知识<?php if ($_smarty_tpl->tpl_vars['cookie']->value) {?><a href="cp.php?op=class" style="float:right;color:#333;">发布</a><?php }?></h2>
+          <h2>分公司网络<?php if ($_smarty_tpl->tpl_vars['cookie']->value) {?><a href="cp.php?op=net" style="float:right;color:#333;">发布</a><?php }?></h2>
         </div>
             <div class="mbd">
-          <ul class="disc01" style="margin-top:15px;height:260px;">         
-           
-            <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['sec1'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['sec1']);
+           <ul class="disc01" style="height:260px;">         
+            　<?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['sec1'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['sec1']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['sec1']['name'] = 'sec1';
 $_smarty_tpl->tpl_vars['smarty']->value['section']['sec1']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['list']->value) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['sec1']['show'] = true;
@@ -128,7 +130,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['sec1']['last']       = ($_sm
                     <span><?php echo $_smarty_tpl->tpl_vars['list']->value[$_smarty_tpl->getVariable('smarty')->value['section']['sec1']['index']]['dateline'];?>
 </span>
                     <a href='more.php?id=<?php echo $_smarty_tpl->tpl_vars['list']->value[$_smarty_tpl->getVariable('smarty')->value['section']['sec1']['index']]['id'];?>
-&op=class'  title='<?php echo $_smarty_tpl->tpl_vars['list']->value[$_smarty_tpl->getVariable('smarty')->value['section']['sec1']['index']]['subject'];?>
+&op=net'  title='<?php echo $_smarty_tpl->tpl_vars['list']->value[$_smarty_tpl->getVariable('smarty')->value['section']['sec1']['index']]['subject'];?>
 '>
                     <?php echo $_smarty_tpl->tpl_vars['list']->value[$_smarty_tpl->getVariable('smarty')->value['section']['sec1']['index']]['subject'];?>
 </a>
@@ -141,20 +143,19 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['sec1']['last']       = ($_sm
 <?php echo $_smarty_tpl->tpl_vars['pagedown']->value;?>
 <?php echo $_smarty_tpl->tpl_vars['pageconfig']->value;?>
 </p><br/>
-            </div>
+              </div>
            
 
       </div> 
       
     </div>
   </div>
-     <br/>
+     <br/><br/>
   <p style="text-align:center;margin-top:10px;">友情链接：<a href="#">四川信托</a> <a href="#">新华信托</a> <a href="#">建设银行</a> <a href="#">华润信托</a> <a href="#">平安信托</a> <a href="#">工商银行</a> <a href="#">中国银行</a> <a href="#">吉林信托</a> <a href="#">大业信托</a></p>
 <br/>
   </div>
 
 </div>
-
 
 <div class="pft">
 	<p>版权所有：广州鑫泽投资管理有限公司</p>

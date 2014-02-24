@@ -5,25 +5,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9132563cbdc5bc186f61967dfe81e726fa83bb11' => 
     array (
       0 => '.\\templates\\new.html',
-      1 => 1393070442,
+      1 => 1393252306,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '75085300779e5f8677-17946466',
   'cache_lifetime' => 120,
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_530891725c6cd1_76337314',
-  'variables' => 
-  array (
-    'list1' => 0,
-    'list' => 0,
-    'list2' => 0,
-    'cookie' => 1,
-    'username' => 1,
-  ),
+  'unifunc' => 'content_530b605f74f9e3_68487457',
   'has_nocache_code' => true,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_530891725c6cd1_76337314')) {function content_530891725c6cd1_76337314($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if ($_valid && !is_callable('content_530b605f74f9e3_68487457')) {function content_530b605f74f9e3_68487457($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -62,12 +54,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="phd">
 	<div class="phdtop">
         <p style="float: right;padding: 0px 15px 0 0px;font-size:12px;"><img src="./templates/weixin.jpg" style="width:18px;float:left;"/><span>&nbsp;微信公众号</span>|<img src="./templates/xinlang.jpg" style="width:12px;"/></span>&nbsp;新浪微博</span>|<img src="./templates/shoucang.jpg" style="width:14px;"/><span style="padding-top:-10px;">&nbsp;<a href="http://mail.gd-xinze.com/">企邮登陆</a></span></p>
-        <p style="float: right;clear: right;padding: 10px 15px 0 80px;color:red;font-size:16px;">财富热线：020-89209004/13544381605</p>
+        <p style="float: right;clear: right;padding: 10px 15px 0 80px;color:#fece03;font-size:16px;">财富热线：020-89209004</p>
         <a href="/" class="logo"><img src="./templates/img/logo.png"/></a>
     </div>
     <ul class="nav">
         <li style="background-image:none;"><a href="index.php">&nbsp;&nbsp;首&nbsp;页&nbsp;</a></li>
-        <li><a href="./templates/instroduce.html">企业简介</a></li>
+        <li><a href="list.php?op=instroduce">企业简介</a></li>
          <li><a href="list.php?op=product">热销产品</a></li>
         <li><a href="list.php?op=message">信息公告</a></li>
         <li><a href="list.php?op=news">新闻资讯</a></li>
@@ -207,8 +199,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <ul>
                             <li>
                     
-                    <a href="more.php?id=00034&op=product">
-                    43534</a>
+                    <a href="more.php?id=00036&op=product">
+                    4564</a>
                     <span>2014-02-22</span>
                 </li>
 　　                          <li>
@@ -309,12 +301,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </li>
 　　                          <li>
                     
-                    <a href="more.php?id=00017&op=product">
-                    鑫泽-常州侨裕集团信托贷款集合资金信托计划</a>
-                    <span>2014-02-22</span>
-                </li>
-　　                          <li>
-                    
                     <a href="more.php?id=00016&op=product">
                     阿斯顿过得更好</a>
                     <span>2014-02-20</span>
@@ -323,6 +309,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     
                     <a href="more.php?id=00015&op=product">
                     啊圣诞狗狗你让他</a>
+                    <span>2014-02-20</span>
+                </li>
+　　                          <li>
+                    
+                    <a href="more.php?id=00014&op=product">
+                    阿斯顿发送给换地方</a>
                     <span>2014-02-20</span>
                 </li>
 　　                      </ul>
