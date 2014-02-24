@@ -74,7 +74,7 @@
     <div class="group gp2" style="width:720px;">
       <div class="mod mod-cpxx mod02" >
         <div class="mhd" style="background: url(./templates/img/lanmu.png) 0 -94px no-repeat;"> 
-          <h2><{$name}><span style="float:right;color:#333">点击量:<{$viewnum}><span></h2>
+          <h2><{$name}><span style="float:right;color:#333"><{if $cookie}> <span><a href="<{$url}>">修改</a>|<a href="<{$url1}>">删除</a></span><{/if}>&nbsp;点击量:<{$viewnum}><span></h2>
         </div>
         <div  style="width:720px;">
 
@@ -85,7 +85,7 @@
           <br/>
 
             </div>
-          <{if $cookie}> <span style="float:right;"><a href="<{$url}>">修改</a>|<a href="<{$url1}>">删除</a></span><{/if}>
+          
 
       </div> 
       
