@@ -48,37 +48,8 @@ if ($_GET['page']){
 	$pageval=$_GET['page'];
 	$page=($pageval-1)*$pagesize;
 	}
-if($num>$pagesize){
-	if (!isset($pageval)) $pageval=1;
-}
+
  
- 
-if ($pages==1){                  //如果总页面只有一页的话，将“上一页”“下一页”的标签替换为空。
-	$pageup="";
-	$pagedown="";
- 
-}else{
-switch($pageval){
-	case 1 :{
-		$pageup="首页";
-		$pagedown="<a href=$url?page=".($pageval+1)."&op=$op>下一页</a>";
-		break;
-	}
-	default :{
-		$pageup="<a href=$url?page=".($pageval-1)."&op=$op>上一页</a>";
-		$pagedown="<a href=$url?page=".($pageval+1)."&op=$op>下一页</a>";
-	    break;
-	}
-	case $pages :{
-		$pageup="<a href=$url?page=".($pageval-1)."&op=$op>上一页</a>";
-		$pagedown="末页";
-		break;
-    }
- 
-}
- 
-}$smarty->assign("pageconfig",$pageconfig);
-//==================================================
 
 $sql_list="SELECT * FROM `$op` order by id DESC LIMIT $page,$pagesize ";        //由此控制数据显示数量部分
 $db_list_list=mysql_query($sql_list);
@@ -89,13 +60,14 @@ while($row=mysql_fetch_array($db_list_list)){
  
  
 }
- 
+include('function.php');
+$page = new page($num,10);
+$str=$page->getPage();
+
 $pageconfig="当前第 $pageval 页,共 $pages 页";
  
- 
-$smarty->assign("pageconfig",$pageconfig);
-$smarty->assign("pageup",$pageup);
-$smarty->assign("pagedown",$pagedown);
+$smarty->assign("page",$str);
+
 $smarty->assign("list",$list);
 if($_COOKIE['uid']=='1'){
 	$smarty->assign("cookie",true);

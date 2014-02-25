@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-24 14:30:11
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-25 02:37:51
          compiled from ".\templates\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:32027530b525c843a16-64038921%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '993a4f4a79418d6aa41c40045b97b005c86ba121' => 
     array (
       0 => '.\\templates\\header.html',
-      1 => 1393252163,
+      1 => 1393295584,
       2 => 'file',
     ),
   ),
@@ -34,6 +34,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <link rel="stylesheet" href="./templates/sliders/elastslider/elastic.css" media="screen" />
 <script type="text/javascript" src="./templates/js/swfobject.js"></script>
 <script type="text/javascript" src="./templates/js/mar.js"></script>
+<script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./templates/ueditor/ueditor.all.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="./templates/ueditor/lang/zh-cn/zh-cn.js"></script>
     <script src="./templates/js/modernizr.custom.js"></script>
     <script src="./templates/js/video.js"></script>
     <script>_V_.options.flash.swf = './templates/js/video-js.swf';</script>
@@ -59,7 +64,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="phd">
 	<div class="phdtop">
         <p style="float: right;padding: 0px 15px 0 0px;font-size:12px;"><img src="./templates/weixin.jpg" style="width:18px;float:left;"/><span>&nbsp;微信公众号</span>|<img src="./templates/xinlang.jpg" style="width:12px;"/></span>&nbsp;新浪微博</span>|<img src="./templates/shoucang.jpg" style="width:14px;"/><span style="padding-top:-10px;">&nbsp;<a href="http://mail.gd-xinze.com/">企邮登陆</a></span></p>
-        <p style="float: right;clear: right;padding: 10px 15px 0 80px;color:#fece03;font-size:16px;">财富热线：020-89209004</p>
+        <p style="float: right;clear: right;padding: 10px 15px 0 80px;color:blue;font-size:16px;">财富热线：020-89209004</p>
         <a href="/" class="logo"><img src="./templates/img/logo.png"/></a>
     </div>
     <ul class="nav">
@@ -73,7 +78,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </ul>
 </div>
 
-<div class="pbd" style="height:540px;">
+<div class="pbd" >
         <div id="ei-slider" class="ei-slider">
             
             <ul class="ei-slider-large">

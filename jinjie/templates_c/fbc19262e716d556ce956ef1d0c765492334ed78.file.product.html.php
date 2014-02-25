@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-24 14:28:52
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-25 02:38:23
          compiled from ".\templates\product.html" */ ?>
 <?php /*%%SmartyHeaderCode:86275304ce9f103a34-08049996%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fbc19262e716d556ce956ef1d0c765492334ed78' => 
     array (
       0 => '.\\templates\\product.html',
-      1 => 1393251461,
+      1 => 1393295902,
       2 => 'file',
     ),
   ),
@@ -21,9 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'cookie' => 0,
     'list' => 0,
-    'pageup' => 0,
-    'pagedown' => 0,
-    'pageconfig' => 0,
+    'page' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -137,9 +135,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['sec1']['last']       = ($_sm
 　　          <?php endfor; endif; ?>
             
           </ul>
-            <p style="float:right;"><?php echo $_smarty_tpl->tpl_vars['pageup']->value;?>
-<?php echo $_smarty_tpl->tpl_vars['pagedown']->value;?>
-<?php echo $_smarty_tpl->tpl_vars['pageconfig']->value;?>
+            <p style="float:right;"><?php echo $_smarty_tpl->tpl_vars['page']->value;?>
 </p><br/>
             </div>
            
