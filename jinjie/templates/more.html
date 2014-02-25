@@ -6,6 +6,7 @@
 		<div class="mod mod-searchBar" >
 		  
 			  <div class="mod mod01 mod-notic">
+          <{if $status='1'}>
                 <div class="mhd"><b></b>
                   <h2>热销产品</h2>
                 </div>
@@ -19,6 +20,61 @@
                   <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
                 </ul>
               </div>
+            <{elseif $status='2'}>
+            <div class="mhd"><b></b>
+                  <h2>信息公告</h2>
+                </div>
+        <div class="mod mod-ksfw" style="height: 240px;">
+                <ul>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=message">通知公告</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=show">信息披露</a></li>
+<!--                   <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
+                  <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
+                </ul>
+              </div>
+            <{elseif $status='3'}>
+             <div class="mhd"><b></b>
+                  <h2>新闻资讯</h2>
+                </div>
+        <div class="mod mod-ksfw" style="height: 240px;">
+                <ul>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=news">业内新闻</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=focus">财经聚焦</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=company">公司新闻</a></li>
+<!--                   <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
+                  <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
+                </ul>
+              </div>
+            <{elseif $status='4'}>
+             <div class="mhd"><b></b>
+                  <h2>人力资源</h2>
+                </div>
+        <div class="mod mod-ksfw" style="height: 240px;">
+                <ul>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=people">人员招聘</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=activity">公司活动</a></li>
+
+<!--                   <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
+                  <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
+                </ul>
+              </div>
+            <{else}>
+            <div class="mhd"><b></b>
+                  <h2>公司简介</h2>
+                </div>
+        <div class="mod mod-ksfw" style="height: 240px;">
+                <ul>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=instroduce">企业背景</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=culture">企业文化</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=say">董事长致辞</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=net">分公司网络</a></li>
+                  <li style="background: url(./templates/img/ksfw.fw.png) no-repeat;"><a href="list.php?op=fa">发展历程</a></li>
+
+<!--                   <a href="/rlzy/zpxx/"><li class="ksfw05">资产信托</li></a>
+                  <a href="/rlzy/zpxx/"><li class="ksfw06">自营业务</li></a> -->
+                </ul>
+              </div>
+               <{/if}>
 			 <!--  <div class="tab-cont">
 				<div class="cont hover">
 					<form  method="get" name="xxss"  class="formSea01">
@@ -92,7 +148,7 @@
     </div>
   </div>
      <br/>
-  <p style="text-align:center;margin-top:10px;">友情链接：<a href="#">四川信托</a> <a href="#">新华信托</a> <a href="#">建设银行</a> <a href="#">华润信托</a> <a href="#">平安信托</a> <a href="#">工商银行</a> <a href="#">中国银行</a> <a href="#">吉林信托</a> <a href="#">大业信托</a></p>
+  <p style="text-align:center;margin-top:10px;">友情链接：<a href="#"><{$status}></a> <a href="#">新华信托</a> <a href="#">建设银行</a> <a href="#">华润信托</a> <a href="#">平安信托</a> <a href="#">工商银行</a> <a href="#">中国银行</a> <a href="#">吉林信托</a> <a href="#">大业信托</a></p>
 <br/>
   </div>
 
