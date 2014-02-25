@@ -123,6 +123,7 @@
     $("#submit").click(function(){
         var subject=$('#subject').val();
         var message=UE.getEditor('editor').getContent();
+        message=removeHTMLTag(message);
         if(!subject||!message){
             alert("选项有空值");
         }else{
@@ -141,6 +142,12 @@
         }
             
     });  
+    function removeHTMLTag(str) {
+             str=str.replace(/&#39/ig,'');
+            //str = str.replace(/\n[\s| | ]*\r/g,'\n'); //去除多余空行
+            str=str.replace(/&nbsp;/ig,'');//去掉&nbsp;
+            return str;
+    }
       UE.getEditor('editor').setShow();
 </script>
 </body>
