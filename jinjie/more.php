@@ -69,6 +69,12 @@ if($op=='product'){
 }elseif($op=='fa'){
 	$name='发展历程';
 	$status='5';
+}elseif($op=='class'){
+	$name='信托知识';
+	$status='6';
+}elseif($op=='class'){
+	$name='理财知识';
+	$status='6';
 }
 include("config.php");
 $query = mysql_query("select * from $op where id='$id'");
