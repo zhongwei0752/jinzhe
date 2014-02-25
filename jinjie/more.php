@@ -43,6 +43,16 @@ if($op=='product'){
 	$name='人员招聘';
 }elseif($op=='activity'){
 	$name='公司活动';
+}elseif($op=='instroduce'){
+	$name='企业背景';
+}elseif($op=='culture'){
+	$name='企业文化';
+}elseif($op=='say'){
+	$name='董事长致辞';
+}elseif($op=='net'){
+	$name='分公司网络';
+}elseif($op=='fa'){
+	$name='发展历程';
 }
 include("config.php");
 $query = mysql_query("select * from $op where id='$id'");
