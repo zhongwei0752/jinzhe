@@ -43,8 +43,8 @@ $db_list_list1=mysql_query($sql_list1);
 while($row1=mysql_fetch_array($db_list_list1)){
 
 	$row1['dateline']=date("Y-m-d",$row1['dateline']);
-	if(mb_strlen("$row1[subject]")>'30'){
-		$row1['subject']=mb_substr("$row1[subject]", 0, 30);
+	if(mb_strlen("$row1[subject]")>'15'){
+		$row1['subject']=mb_substr("$row1[subject]", 0, 15);
 	}
 	$list1[]=$row1;      //将数据库中查询内容重新赋值
  
