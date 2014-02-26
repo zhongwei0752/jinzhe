@@ -43,6 +43,9 @@ $db_list_list1=mysql_query($sql_list1);
 while($row1=mysql_fetch_array($db_list_list1)){
 
 	$row1['dateline']=date("Y-m-d",$row1['dateline']);
+	if(strlen("$row1[subject]")>'50'){
+		$row1['subject']=substr("$row1[subject]", 0, 50);
+	}
 	$list1[]=$row1;      //将数据库中查询内容重新赋值
  
  
@@ -52,9 +55,7 @@ $db_list_list2=mysql_query($sql_list2);
 while($row2=mysql_fetch_array($db_list_list2)){
 
 	$row2['dateline']=date("Y-m-d",$row2['dateline']);
-	if(strlen("$row2[subject]")>'50'){
-		$row2['subject']=substr("$row2[subject]", 0, 50);
-	}
+	
 	$list2[]=$row2;      //将数据库中查询内容重新赋值
  
  
