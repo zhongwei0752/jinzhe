@@ -32,7 +32,7 @@ if($op=='product'){
 }elseif($op=='good'){
 	$name='公益信托';
 	$status='1';
-}elseif($op=='messge'){
+}elseif($op=='message'){
 	$name='通知公告';
 	$status='2';
 }elseif($op=='show'){
