@@ -361,7 +361,7 @@ a,img{border:0;}
 
 
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];</script>
-<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>!window.jQuery && document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 <!--[if lt IE 9]>
     <script src="js/selectivizr-and-extra-selectors.min.js"></script>
@@ -375,9 +375,9 @@ a,img{border:0;}
 <script src="js/custom.js"></script>
 <script src="themeChanger/js/colorpicker.js"></script>
 <script src="themeChanger/js/themeChanger.js"></script>
-<script language="JavaScript" type="text/JavaScript">     
+<script language="JavaScript" type="text/JavaScript">    
    $("#code").click(function(){ 
-        $(this).attr("src",'code.php?' + Math.random()); 
+        $(this).attr("src",'../code.php?' + Math.random()); 
     }); 
    $("#username").change(function(){
         var username= $("#username").val();
@@ -403,6 +403,7 @@ a,img{border:0;}
         if(pwd==pwd2){
           $("#pwd2_succeed").show();
           $("#pwd2status").val('1');
+          $("#pwd2_succeed").html("√");
         }else{
           $("#pwd2_succeed").show();
           $("#pwd2_succeed").html("×");
@@ -413,6 +414,7 @@ a,img{border:0;}
         var tel= $("#tel").val();
         if(tel.length=='11'){
           $("#tel_succeed").show();
+          $("#tel_succeed").html("√");
           $("#telstatus").val('1');
         }else{
           $("#tel_succeed").show();
@@ -443,6 +445,7 @@ a,img{border:0;}
         var code=$.cookie('code');
         if(authcode==code){
           $("#authcode_succeed").show();
+          $("#authcode_succeed").html("√");
           $("#authcodestatus").val('1');
         }else{
           $("#authcode_succeed").html("×");
@@ -457,7 +460,7 @@ a,img{border:0;}
         var mailstatus= $("#mailstatus").val();
         var authcodestatus= $("#authcodestatus").val();
         var idcardstatus= $("#idcardstatus").val();
-        if(usernamestatus&&pwdstatus&&pwd2status&&telstatus&&mailstatus&&authcodestatus&&idcardstatus){
+        if(usernamestatus=='1'&&pwdstatus=='1'&&pwd2status=='1'&&telstatus=='1'&&mailstatus=='1'&&authcodestatus=='1'&&idcardstatus=='1'){
             $("#registsubmit").show();
         }else{
           $("#protocol").attr("checked", false);
@@ -467,12 +470,12 @@ a,img{border:0;}
     $("#registsubmit").click(function(){
             $.ajax({
                    type: "POST",
-                   url: "deal.php",
+                   url: "../deal.php",
                    data: "registsubmit=1&username="+$('#username').val()+"&pwd="+$('#pwd').val()+"&pwd2="+$('#pwd2').val()+"tel="+$('#tel').val()+"&mail="+$('#mail').val()+"&authcode="+$('#authcode').val()+"&idcard="+$('#idcard').val()+"",//提交表单，相当于CheckCorpID.ashx?ID=XXX
                     async: true,                    
                       success: function (data) {
                         if(data=='1'){
-                          window.location.href="index.php";
+                          window.location.href="../index.php";
                         }else{
                           alert(data);
                         }
